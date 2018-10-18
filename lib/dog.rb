@@ -6,7 +6,9 @@ class Dog
     @@all << self
   end
   def self.all
-    @@all.name
+    @@all.each do |dog|
+      dog.name
+    end
   end
   def self.clear_all
     @@all.clear
